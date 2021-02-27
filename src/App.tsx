@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import LoadingManager from "./SimpleExample/LoadingManager";
+import SimplifiedExample from "./SimpleExample/SimplifiedExample";
+import "./App.css";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <SimplifiedExample presenter={new LoadingManager()} />
       </header>
     </div>
   );
